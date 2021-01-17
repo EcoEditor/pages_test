@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><b>PleaseShutup</b></title>
+</head>
+<body>
+<h1 style="background-color:lightskyblue;">
+<h1><u>How to make your neighbors stop yelling at their dog?</u></h1>
+<h2><string>Welcome to my page.</strong></h2>
+<h3><font color = "blue">I hope you like it here.<font></h3>
+<p style="color:midnightblue;">
+<p><em>Why people yell at their dogs? They are only small and harmless creatures</em></p>
+<body style = "background-color:lavender;">
+<img src="http://www.mypicture.com/lake.jpg">
+<a href="https://www.facebook.com">Facebook</a>.
+<br>
+</body>
+</html>
