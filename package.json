@@ -1,5 +1,5 @@
 {
-  "name": "particlesystem_level2",
+  "name": "TestProject_Cube",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,16 +8,10 @@
     "start": "webpack-dev-server --port 8080",
 	"startdev": "webpack serve --mode development --env development --inline --port 8080"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EcoEditor/ParticleSystem_Level2.git"
-  },
   "author": "Lena",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EcoEditor/ParticleSystem_Level2/issues"
   },
-  "homepage": "https://github.com/EcoEditor/ParticleSystem_Level2#readme",
   "devDependencies": {
     "@babylonjs/core": "^4.2.0",
     "@babylonjs/inspector": "^4.2.0",

@@ -50,16 +50,19 @@ class App {
 
     private async _main(): Promise<void> {
         await this._goToStart();
-        await this._initializeGameAsync(this._scene);
-        await this._audioController.loadAsync();
+        //await this._initializeGameAsync(this._scene);
+        //await this._audioController.loadAsync();
         //this._trailvfx.playTrailEffect();
     }
 
     private async _goToStart(): Promise<void> {
         await this._scene.createDefaultXRExperienceAsync({});
-        this._trailvfx = new TrailParticlesController(this._scene);
+        //this._trailvfx = new TrailParticlesController(this._scene);
         this._audioController = new AudioController(this._scene);
         this._input = new PlayerInput(this._scene);
+
+        //Create cube
+        var box = MeshBuilder.CreateBox("box", {});
     }
 
     //init game
