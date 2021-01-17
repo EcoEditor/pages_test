@@ -15,3 +15,5 @@ npm run start
 
 
 then connect to localhost:8080 from a web browser.
+
+The project is meant to be hosted: https://ecoeditor.github.io/pages_test/
