@@ -62,6 +62,7 @@ class App {
         this._input = new PlayerInput(this._scene);
 
         //Create cube
+        Logger.Log("Building a cube");
         var box = MeshBuilder.CreateBox("box", {});
     }
 
