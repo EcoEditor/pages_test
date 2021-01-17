@@ -3,22 +3,11 @@ import "@babylonjs/inspector";
 import "@babylonjs/loaders/glTF";
 import { Engine, Scene, ArcRotateCamera, Vector3, HemisphericLight, Mesh, MeshBuilder, Logger } from "@babylonjs/core";
 
-import { TrailParticlesController } from "./trailParticlesController";
-import { AudioController } from "./audioController";
-import { PlayerInput } from "./inputController";
-import { Player } from "./playerController";
-
 class App {
     // General Entire Application
     private _scene: Scene;
     private _canvas: HTMLCanvasElement;
     private _engine: Engine;
-
-    //Game State Related
-    private _trailvfx: TrailParticlesController;
-    private _audioController: AudioController;
-    private _input: PlayerInput;
-    private _player: Player;
 
     constructor() {
         this._canvas = this._createCanvas();
@@ -50,26 +39,14 @@ class App {
 
     private async _main(): Promise<void> {
         await this._goToStart();
-        //await this._initializeGameAsync(this._scene);
-        //await this._audioController.loadAsync();
-        //this._trailvfx.playTrailEffect();
     }
 
     private async _goToStart(): Promise<void> {
         await this._scene.createDefaultXRExperienceAsync({});
-        //this._trailvfx = new TrailParticlesController(this._scene);
-        this._audioController = new AudioController(this._scene);
-        this._input = new PlayerInput(this._scene);
 
         //Create cube
         Logger.Log("Building a cube");
         var box = MeshBuilder.CreateBox("box", {});
-    }
-
-    //init game
-    private async _initializeGameAsync(scene): Promise<void> {
-        this._player = new Player(this._scene, this._input, this._audioController, this._trailvfx);
-        this._player.beforeRenderUpdate();
     }
 
     //set up the canvas
